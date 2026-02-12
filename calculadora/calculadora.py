@@ -17,10 +17,7 @@ while True:
     elif opcao == "*":
         print(f"\033[42m {num1} {opcao} {num2} = {matematica.multiplicar(num1, num2)} \033[m".center(50, "~"))
     else:
-        if opcao == "/" and num2 == 0:
-            print("Não pode ser dividido por zero!")
-        else:
-            print(f"\033[42m {num1} {opcao} {num2} = {matematica.dividir(num1, num2)} \033[m".center(50, "~"))
+        print(f"\033[42m {num1} {opcao} {num2} = {matematica.dividir(num1, num2)} \033[m".center(50, "~"))
     while True:
         cont = str(input("Deseja continuar? [S/N]")).strip().upper()[0]
         if cont in "SN":
