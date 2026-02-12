@@ -1,3 +1,5 @@
+import matematica
+
 print("=" * 50)
 print(" Calculadora ".center(50, "-"))
 print("=" * 50)
@@ -7,7 +9,7 @@ while True:
     num2 = int(input("Digite o segundo numero: "))
     opcao = str(input("Digite o simbolo do tipo da operação \033[32m[+,-,*,/]\033[m: "))
     if opcao == "+":
-        print("Resultado:",num1 + num2)
+        matematica.soma(num1, num2)
         print("=" * 50)
     elif opcao == "-":
         result = abs(num1 - num2)
